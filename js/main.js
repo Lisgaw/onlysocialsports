@@ -28,8 +28,7 @@ document.querySelectorAll('.mobile-link').forEach(link => {
 });
 
 // ── Web App launch handler ────────────────────────────────
-// APP_URL will be replaced with actual URL once deployed
-const APP_URL = 'https://onlysocialsports-app.vercel.app';
+const APP_URL = 'https://onlysocialsports.vercel.app/web/';
 
 const openAppButtons = ['hero-open-app', 'nav-open-app', 'mobile-open-app', 'launch-webapp'];
 openAppButtons.forEach(id => {
@@ -37,7 +36,7 @@ openAppButtons.forEach(id => {
   if (btn) {
     btn.addEventListener('click', (e) => {
       // If APP_URL is still placeholder, show info
-      if (APP_URL.includes('onlysocialsports-app.vercel.app')) {
+      if (APP_URL.includes('onlysocialsports.vercel.app')) {
         // App is deployed — open in new tab
         window.open(APP_URL, '_blank', 'noopener,noreferrer');
       }
