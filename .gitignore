@@ -1,0 +1,8 @@
+# Git ignore for OnlySocialSports web project
+node_modules/
+.env
+.env.local
+.vercel/
+*.log
+web/
+apk/*.apk
