@@ -36,6 +36,7 @@ Write-Host ""
 Write-Host "[1/5] Flutter Web build yapılıyor..." -ForegroundColor Green
 Push-Location $MOBILE
 & C:\flutter\bin\flutter.bat build web `
+    --base-href=/web/ `
     --dart-define=FLAVOR=prod `
     "--dart-define=BASE_URL=https://onlysocialsports-api.vercel.app/api" `
     --release

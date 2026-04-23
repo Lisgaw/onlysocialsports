@@ -32,7 +32,7 @@ onlysocialsports/
 ```powershell
 cd sports_partner_mobile
 $env:PATH = "C:\Windows\System32;C:\flutter\bin;$env:PATH"
-flutter build web --dart-define=FLAVOR=prod --dart-define=BASE_URL=https://onlysocialsports-api.vercel.app/api --release
+flutter build web --base-href=/web/ --dart-define=FLAVOR=prod --dart-define=BASE_URL=https://onlysocialsports-api.vercel.app/api --release
 ```
 
 ### 2. Flutter Build Çıktısını Kopyala
