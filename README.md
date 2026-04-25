@@ -32,7 +32,7 @@ onlysocialsports/
 ```powershell
 cd sports_partner_mobile
 $env:PATH = "C:\Windows\System32;C:\flutter\bin;$env:PATH"
-flutter build web --base-href=/web/ --dart-define=FLAVOR=prod --dart-define=BASE_URL=https://onlysocialsports-api.vercel.app/api --release
+flutter build web --base-href=/web/ --dart-define=FLAVOR=prod --dart-define=BASE_URL=https://api.onlysocialsport.com/api --release
 ```
 
 ### 2. Flutter Build Çıktısını Kopyala
@@ -50,7 +50,7 @@ Copy-Item "sports_partner_mobile\build\app\outputs\flutter-apk\app-release.apk" 
 ### 4. js/main.js'deki APP_URL'i Güncelle
 `js/main.js` içindeki `APP_URL` değişkenini doğru URL ile güncelle:
 ```javascript
-const APP_URL = 'https://onlysocialsports.vercel.app/web/';
+const APP_URL = 'https://onlysocialsport.com/web/';
 ```
 
 ### 5. GitHub'a Push

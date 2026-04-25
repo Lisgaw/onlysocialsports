@@ -28,18 +28,14 @@ document.querySelectorAll('.mobile-link').forEach(link => {
 });
 
 // ── Web App launch handler ────────────────────────────────
-const APP_URL = 'https://onlysocialsports.vercel.app/web/';
+const APP_URL = 'https://onlysocialsport.com/web/';
 
 const openAppButtons = ['hero-open-app', 'nav-open-app', 'mobile-open-app', 'launch-webapp'];
 openAppButtons.forEach(id => {
   const btn = document.getElementById(id);
   if (btn) {
     btn.addEventListener('click', (e) => {
-      // If APP_URL is still placeholder, show info
-      if (APP_URL.includes('onlysocialsports.vercel.app')) {
-        // App is deployed — open in new tab
-        window.open(APP_URL, '_blank', 'noopener,noreferrer');
-      }
+      window.open(APP_URL, '_blank', 'noopener,noreferrer');
     });
   }
 });
